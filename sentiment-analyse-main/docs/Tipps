@@ -1,0 +1,23 @@
+// Eingabe Terminal:
+git status
+git add .
+git commit -m "kurze beschreibung"
+git push
+git status zeigt: was hast du geändert?
+
+git add . packt Änderungen “zum Hochladen”
+
+git commit -m ... macht ein “Paket” (Version)
+
+git push lädt zu GitLab hoch
+
+Wichtig: Ohne git push sieht GitLab deine Änderungen nicht.
+
+
+-----------------------------------------------------------------
+
+Browser startet:
+http://127.0.0.1:8000/docs
+
+------------------------------------------------------------------
+Starten : .\.venv\Scripts\python.exe -m uvicorn src.main:app --reload

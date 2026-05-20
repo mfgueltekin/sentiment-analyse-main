@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+.venv/
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+
+# Excel lock files
+~$*.xlsx
+
+# Pytest cache
+.pytest_cache/
+
+# Optional: wenn du Daten/Reports NICHT versionieren willst:
+# data/processed/
+# data/raw/
+
+# Optional: wenn Modelle NICHT versionieren willst:
+# model/*.joblib
+
+# ===== Generated datasets =====
+#data/processed/*.csv
+#data/processed/de_filmreviews.csv
+#analysis/
+#filmstarts/
+
+# ===== Trained ML models =====
+model/*.joblib
+
+# ===== Python junk =====
+__pycache__/
+*.pyc

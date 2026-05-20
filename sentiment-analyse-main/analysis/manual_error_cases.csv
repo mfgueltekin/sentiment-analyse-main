@@ -1,0 +1,83 @@
+text,language,expected,predicted,prob_positive,prob_negative,comment
+
+Tests auf Deutsch (15 Stück davon alter datensatz 8 richtig/ neuer Datensatz 11 richtig /tokenizer 11 richtig)
+Kommentar, Erwartung, Ergebnis erster Datensatz, Werte erster Datensatz, ergebnis zweiter Datensatz, ergebnis tokenizer
+
+das war schlecht, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.382 | P(neg): 0.618, negative, negativ
+
+das war großartig, (erwartet positiv), Label: 0 Sentiment: negative, P(pos): 0.430 | P(neg): 0.570,  negative, negativ
+
+nicht gut, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.360 | P(neg): 0.640, negative, negativ
+
+nicht schlecht, (erwartet positiv schwach), Label: 0 Sentiment: negative, P(pos): 0.287 | P(neg): 0.713, negative, negativ
+
+ich hasse diesen film, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.307 | P(neg): 0.693, negative, negativ
+
+ich liebe diesen film, (erwartet positiv), Label: 0 Sentiment: negative, P(pos): 0.471 | P(neg): 0.529, positive, positiv
+
+Der film war langweilig, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.468 | P(neg): 0.532, negative, negativ
+
+die schauspieler waren hervorragend, (erwartet positiv), Label: 0 Sentiment: negative, P(pos): 0.485 | P(neg): 0.515, positive, positiv
+
+Das war eine enttäuschung, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.401 | P(neg): 0.599, negative, negativ
+
+Der film war nicht langweilig, (erwartet positiv), Label: 0 Sentiment: negative, P(pos): 0.246 | P(neg): 0.754, negative, negativ
+
+Das Produkt ist sehr schlecht, (erwartet: negativ), Label: 1 Sentiment: positive, P(pos): 0.520 | P(neg): 0.480, negative, negativ
+
+ich finde den nachbarn echt nett, (erwartet positiv), Label: 1 Sentiment: positive, P(pos): 0.529 | P(neg): 0.471, positive, positiv
+
+ich finde es hat eine starke performance, (erwartet positiv), Label: 0 Sentiment: negative, P(pos): 0.450 | P(neg): 0.550, positive, positiv
+
+Ich mag die Innenstadt garnicht dort ist es viel zu überfüllt, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.344 | P(neg): 0.656, negative, negativ
+
+es geht nurnoch berg ab, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.454 | P(neg): 0.546, positive, positiv
+
+
+Tests auf englisch (15 Stück davon 10 Richtig)
+Kommentar, Erwartung, Ergebnis, Werte
+
+disgusting, (erwartet negativ), Label: 1 Sentiment: positiv, P(pos): 0.531 | P(neg): 0.469
+
+horrible, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.017 | P(neg): 0.983
+
+amazing, (erwartet positiv), Label: 1 Sentiment: positive, P(pos): 0.985 | P(neg): 0.015
+
+not good, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.205 | P(neg): 0.795
+
+not bad, (erwartet positiv schwach), Label: 0 Sentiment: negative, P(pos): 0.026 | P(neg): 0.974
+
+i hated this movie, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.235 | P(neg): 0.765
+
+i loved this movie, (erwartet positiv), Label: 1 Sentiment: positive, P(pos): 0.963 | P(neg): 0.037
+
+this movie was boring, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.025 | P(neg): 0.975
+
+the movie was not boring, (erwartet positiv), Label: 0 Sentiment: negative, P(pos): 0.035 | P(neg): 0.965
+
+this was a waste of time, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.011 | P(neg): 0.989
+
+surprisingly good, (erwartet positiv), Label: 1 Sentiment: positive, P(pos): 0.857 | P(neg): 0.143
+
+very disappointing, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.198 | P(neg): 0.802
+
+i expected more, (erwartet negativ), Label: 1 Sentiment: positive, P(pos): 0.589 | P(neg): 0.411
+
+the acting was incredible, (erwartet positiv), Label: 0 Sentiment: negative, P(pos): 0.497 | P(neg): 0.503
+
+the story was terrible, (erwartet negativ), Label: 0 Sentiment: negative, P(pos): 0.062 | P(neg): 0.938
+
+
+text,language,expected,predicted,prob_positive,prob_negative,comment
+disgusting,en,negative,positive,0.531,0.469,single negative word misclassified
+not bad,en,positive,negative,0.026,0.974,negation not handled by tf-idf
+the movie was not boring,en,positive,negative,0.035,0.965,negation problem
+i expected more,en,negative,positive,0.589,0.411,ambiguous sentence learned as positive
+the acting was incredible,en,positive,negative,0.497,0.503,positive phrase near decision boundary
+das war großartig,de,positive,negative,0.430,0.570,positive adjective missing from training data
+nicht schlecht,de,positive,negative,0.287,0.713,negation not captured
+der film war nicht langweilig,de,positive,negative,0.246,0.754,negation of negative adjective
+das produkt ist sehr schlecht,de,negative,positive,0.520,0.480,domain shift from movie to product reviews
+ich finde es hat eine starke performance,de,positive,negative,0.450,0.550,domain shift business language
+die schauspieler waren hervorragend,de,positive,negative,0.485,0.515,positive film vocabulary near threshold
+ich liebe diesen film,de,positive,negative,0.471,0.529,positive phrase misclassified

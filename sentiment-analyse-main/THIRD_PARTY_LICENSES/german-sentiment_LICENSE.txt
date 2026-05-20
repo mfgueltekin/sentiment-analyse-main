@@ -1,0 +1,11 @@
+This project includes resources adapted from the following public repository:
+
+https://github.com/oliverguhr/german-sentiment
+
+License: MIT License
+
+The original license applies to the adapted components.
+All rights remain with the original authors and data providers.
+
+The data is included solely for academic and non-commercial use
+as part of a university examination submission.

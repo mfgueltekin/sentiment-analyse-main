@@ -1,0 +1,82 @@
+{
+  "en_raw_rows": 49578,
+  "de_raw_rows": 54989,
+  "en_sample_rows": 49392,
+  "de_sample_rows": 30838,
+  "combined_rows": 80230,
+  "train_rows": 64184,
+  "test_rows": 16046,
+  "distribution_combined": [
+    {
+      "lang": "de",
+      "label": 0,
+      "count": 15419
+    },
+    {
+      "lang": "de",
+      "label": 1,
+      "count": 15419
+    },
+    {
+      "lang": "en",
+      "label": 0,
+      "count": 24696
+    },
+    {
+      "lang": "en",
+      "label": 1,
+      "count": 24696
+    }
+  ],
+  "distribution_train": [
+    {
+      "lang": "de",
+      "label": 0,
+      "count": 12335
+    },
+    {
+      "lang": "de",
+      "label": 1,
+      "count": 12335
+    },
+    {
+      "lang": "en",
+      "label": 0,
+      "count": 19757
+    },
+    {
+      "lang": "en",
+      "label": 1,
+      "count": 19757
+    }
+  ],
+  "distribution_test": [
+    {
+      "lang": "de",
+      "label": 0,
+      "count": 3084
+    },
+    {
+      "lang": "de",
+      "label": 1,
+      "count": 3084
+    },
+    {
+      "lang": "en",
+      "label": 0,
+      "count": 4939
+    },
+    {
+      "lang": "en",
+      "label": 1,
+      "count": 4939
+    }
+  ],
+  "outputs": {
+    "en_sample": "data\\processed\\en_sample.csv",
+    "de_sample": "data\\processed\\de_sample.csv",
+    "combined": "data\\processed\\combined.csv",
+    "train": "data\\processed\\train.csv",
+    "test": "data\\processed\\test.csv"
+  }
+}
