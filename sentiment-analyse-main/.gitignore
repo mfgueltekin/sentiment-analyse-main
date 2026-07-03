@@ -27,7 +27,12 @@ Thumbs.db
 #data/processed/*.csv
 #data/processed/de_filmreviews.csv
 #analysis/
-#filmstarts/
+filmstarts/
+
+# ===== Internal notes =====
+docs/Tipps
+abschlussarbeit.md
+output.md
 
 # ===== Trained ML models =====
 model/*.joblib

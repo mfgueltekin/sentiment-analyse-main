@@ -1,9 +1,6 @@
-# Sentiment Analyse API (DE/EN) – Projektarbeit
+# Sentiment Analyse API (DE/EN)
 
-**Team:**  
-Mehmet Fatih Gültekin (1647896)  
-Kadir Can Nazli (1691339)  
-Abdullah Altun (1469674)
+**Autor:** Mehmet Fatih Gültekin
 
 **Thema:**  
 Automatische Sentiment-Erkennung (positiv / negativ) für Texte in Deutsch und Englisch
@@ -152,8 +149,7 @@ Data & Attribution
 German sentiment resources are adapted from the public repository:
 https://github.com/oliverguhr/german-sentiment (MIT License).
 
-Filmstarts movie reviews are included exclusively for academic examination purposes
-(non-commercial) in a private university GitLab repository.
+German training data is based on publicly available movie review sources for academic use.
 
 
 ---
